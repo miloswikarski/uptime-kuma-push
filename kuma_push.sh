@@ -76,7 +76,7 @@ if [ -n "$alert_reason" ]; then
     echo "Up status sent: $up_url"
 else
     # Send normal up status
-    up_msg=$(urlencode "OK")
+    up_msg=$(urlencode "CPU:${cpu_usage} Mem:${mem_usage} Disk:${disk_usage}")
     up_url="${PUSH_URL}?status=up&msg=${up_msg}&ping=1&cpu=${cpu_usage}&mem=${mem_usage}&disk=${disk_usage}"
     curl -s -o /dev/null "$up_url"
     echo "Normal up status sent: $up_url"
