@@ -11,9 +11,9 @@ A bash script for monitoring server metrics and reporting to Uptime Kuma.
 
 ## Quick Start
 
-1. Save the script to `/usr/local/bin/uptime_monitor.sh`
-2. Make it executable: `chmod +x /usr/local/bin/uptime_monitor.sh`
-3. Add to crontab: `*/5 * * * * /usr/local/bin/uptime_monitor.sh`
+1. Save the script to `/usr/local/bin/kuma_push.sh`
+2. Make it executable: `chmod +x /usr/local/bin/kuma_push.sh`
+3. Add to crontab: `*/5 * * * * /usr/local/bin/kuma_push.sh`
 
 ## Configuration
 
